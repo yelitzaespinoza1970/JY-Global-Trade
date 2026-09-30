@@ -1,0 +1,19 @@
+{
+  "short_name": "JY Global Trade",
+  "name": "JY Global Trade LLC",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#22286f",
+  "theme_color": "#22286f"
+}

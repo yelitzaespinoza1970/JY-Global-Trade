@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contacto | JY Global Trade LLC</title>
+
+    <meta
+      name="description"
+      content="Contacte a JY Global Trade LLC para consultas sobre importación, exportación, broker internacional, logística y soluciones de comercio global."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto | JY Global Trade LLC" />
+    <meta
+      property="og:description"
+      content="Hable con nuestro equipo sobre sus necesidades de importación, exportación, logística, broker y comercio internacional."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jyglobaltrade.com/contacto.html" />
+    <meta
+      property="og:image"
+      content="https://jyglobaltrade.com/img/og-image.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="JY Global Trade LLC - Soluciones de comercio internacional"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#22286f" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="contact">
+    <div class="container">
+      <header class="main_header">
+        <a href="index.html">
+          <img
+            width="100"
+            height="100"
+            src="img/global_logodef.png"
+            alt="Logo de JY Global Trade"
+          />
+        </a>
+
+        <button
+          class="menu_toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main_menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes_somos.html">Quiénes somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="sectores.html">Sectores</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <h1 class="hero_title">
+            Contáctenos, su próximo negocio comienza con una conversación
+          </h1>
+          <p class="hero_subtitle">
+            En JY Global Trade trabajamos para conectar oportunidades y
+            facilitar sus operaciones comerciales. Cuéntenos sobre su proyecto y
+            encontremos juntos la solución adecuada para su negocio.
+          </p>
+        </section>
+
+        <section class="service">
+          <h2 class="service_title">Hablemos de su próximo proyecto</h2>
+          <p class="service_description">
+            Estamos listos para conocer sus necesidades y encontrar la solución
+            adecuada para su negocio.
+          </p>
+        </section>
+
+        <section class="categories">
+          <div class="contact_left">
+            <article class="category_card_base category_contact">
+              <h3 class="category_title">Información de contacto</h3>
+              <p class="category_description">
+                <img
+                  class="category_icon"
+                  src="img/pin.png"
+                  alt="Información de contacto"
+                />Cincinnati, Ohio, USA
+              </p>
+              <p class="category_description">
+                <img
+                  class="category_icon"
+                  src="img/call.png"
+                  alt="Teléfono"
+                />Teléfono: +1 (503) 000-000
+              </p>
+              <p class="category_description">
+                <img
+                  class="category_icon"
+                  src="img/email.png"
+                  alt="Correo electrónico"
+                />
+                Correo electrónico: jyglobaltradeusa@gmail.com
+              </p>
+            </article>
+
+            <article class="category_card_base category">
+              <h3 class="category_title">¿Por qué contactarnos?</h3>
+              <ul class="atributes_list">
+                <li>Atención personalizada</li>
+                <li>Respuesta rápida</li>
+                <li>Soluciones internacionales</li>
+                <li>Asesoría profesional</li>
+                <li>Acompañamiento durante todo el proceso</li>
+              </ul>
+            </article>
+          </div>
+
+          <article class="category_card_base category_form">
+            <h3 class="category_title">Envíenos un mensaje</h3>
+            <p class="category_description">
+              Estamos aquí para ayudarle con cualquier pregunta o solicitud que
+              tenga.
+            </p>
+
+            <div data-fs-success>
+              <strong>¡Mensaje enviado correctamente!</strong>
+              <span>
+                Gracias por contactarnos. Hemos recibido su solicitud y nos
+                pondremos en contacto con usted a la brevedad.
+              </span>
+            </div>
+            <div data-fs-error></div>
+
+            <form
+              id="contact_form"
+              action="https://formspree.io/f/myegblnw"
+              method="post"
+            >
+              <label for="name">Nombre completo:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="company">Empresa:</label>
+              <input type="text" id="company" name="company" required />
+
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Mensaje:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit" data-fs-submit-btn>Enviar mensaje</button>
+            </form>
+          </article>
+        </section>
+
+        <article class="category_contact_cta">
+          <h3 class="category_title">
+            ¿Listo para llevar su negocio al mercado internacional?
+          </h3>
+          <p class="category_description">
+            En JY Global Trade LLC trabajamos para conectar empresas con
+            oportunidades globales mediante soluciones eficientes, confiables y
+            personalizadas.
+          </p>
+          <a href="#contact_form" class="category_button"
+            >Solicitar una consulta</a
+          >
+        </article>
+      </main>
+    </div>
+
+    <div class="container_footer">
+      <footer>
+        <nav class="footer_menu">
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=61594121396330"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="img/facebook.png" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com"
+                ><img src="img/linkedin_icon.png" alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/jyglobaltrade/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="img/instagram_icon.png" alt="Instagram" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer_text">
+          &copy; 2026 JY Global Trade LLC. Todos los derechos reservados.
+        </p>
+      </footer>
+    </div>
+    <script>
+      window.formspree =
+        window.formspree ||
+        function () {
+          (formspree.q = formspree.q || []).push(arguments);
+        };
+
+      formspree("initForm", {
+        formElement: "#contact_form",
+        formId: "myegblnw",
+      });
+    </script>
+
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+    <script>
+      const menuToggle = document.querySelector(".menu_toggle");
+      const mainMenu = document.querySelector(".main_menu");
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = mainMenu.classList.toggle("active");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Cerrar menú" : "Abrir menú",
+        );
+      });
+    </script>
+  </body>
+</html>
