@@ -66,6 +66,15 @@ header.main_header {
   margin-bottom: 20px;
 }
 
+header.main_header > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 6px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
 header.main_header a img {
   width: 120px;
   height: auto;
@@ -612,6 +621,11 @@ body {
     align-items: center;
   }
 
+  header.main_header a img {
+    width: 150px;
+    height: auto;
+  }
+
   .menu_toggle {
     display: flex;
     flex-direction: column;
@@ -664,6 +678,17 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  nav.main_menu ul li:last-child {
+    margin-left: 0;
+  }
+
+  nav.main_menu ul li:last-child a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
   }
 
   .main_menu ul li a {
