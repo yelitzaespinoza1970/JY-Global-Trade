@@ -213,6 +213,11 @@ body.sectors nav.main_menu a[href="sectores.html"] {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.sectors .hero,
+.contact .hero {
+  padding-bottom: 140px;
+}
+
 .service {
   padding: 70px 0;
   padding-left: 40px;
