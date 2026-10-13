@@ -129,6 +129,33 @@ nav.main_menu ul li:last-child a:hover {
   border-bottom: none;
 }
 
+.language_switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.language_switcher a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.language_switcher span {
+  color: var(--color-white);
+}
+
+.language_switcher a:hover {
+  text-decoration: underline;
+}
+
+.language_switcher .active_language {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* Página Inicio */
 body.home nav.main_menu a[href="index.html"] {
   border-bottom: 3px solid white;
@@ -136,22 +163,25 @@ body.home nav.main_menu a[href="index.html"] {
   font-weight: 600;
 }
 
-/* Página Quiénes somos */
-body.about_us nav.main_menu a[href="quienes_somos.html"] {
+/* Página Quiénes somos / About Us */
+body.about_us nav.main_menu a[href="quienes_somos.html"],
+body.about_us nav.main_menu a[href="about_us.html"] {
   border-bottom: 3px solid white;
   padding-bottom: 4px;
   font-weight: 600;
 }
 
-/* Página Servicios */
-body.services nav.main_menu a[href="servicios.html"] {
+/* Página Servicios / Services */
+body.services nav.main_menu a[href="servicios.html"],
+body.services nav.main_menu a[href="services.html"] {
   border-bottom: 3px solid white;
   padding-bottom: 4px;
   font-weight: 600;
 }
 
-/* Página Sectores */
-body.sectors nav.main_menu a[href="sectores.html"] {
+/* Página Sectores / Sectors */
+body.sectors nav.main_menu a[href="sectores.html"],
+body.sectors nav.main_menu a[href="sectors.html"] {
   border-bottom: 3px solid white;
   padding-bottom: 4px;
   font-weight: 600;
@@ -614,6 +644,19 @@ body {
   display: none;
 }
 
+/* Selector de idiomas - Contact en ambos idiomas */
+.contact .language_switcher a,
+.contact .language_switcher span {
+  color: #22286f;
+}
+
+/* Espacio inferior de Contacto en escritorio */
+@media (min-width: 769px) {
+  .contact .service {
+    padding-bottom: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   /* móvil */
 
@@ -727,6 +770,10 @@ body {
     margin-bottom: 0;
   }
 
+  html[lang="en"] .home .hero_button {
+    margin-top: 20px;
+  }
+
   .home .hero::before {
     content: "";
     position: absolute;
@@ -785,7 +832,7 @@ body {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    padding: 30px 20px 140px;
+    padding: 30px 20px 70px;
     margin-bottom: 0;
   }
   .about_us .hero::before {
@@ -857,7 +904,7 @@ body {
   }
 
   .services section.categories {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .services .process_list {
     display: flex;
@@ -989,5 +1036,34 @@ body {
   }
   .contact .category_contact_cta .category_description {
     text-align: left;
+  }
+
+  .language_switcher {
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    margin-left: 0;
+    z-index: 1002;
+  }
+
+  /* Subtítulo de Contacto en móviles */
+  .contact .hero_subtitle {
+    text-align: left;
+  }
+}
+
+/* Ajustes exclusivos para Sectors en inglés - escritorio */
+@media (min-width: 769px) {
+  .sectors_en .hero {
+    padding-bottom: 220px;
+  }
+
+  .sectors_en .service {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .sectors_en section.categories {
+    margin-top: 10px;
   }
 }
