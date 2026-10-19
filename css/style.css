@@ -1059,11 +1059,15 @@ body {
   }
 
   .sectors_en .service {
-    padding-top: 35px;
+    padding-top: 55px;
     padding-bottom: 35px;
   }
 
   .sectors_en section.categories {
     margin-top: 10px;
   }
+}
+
+html[lang="en"] .home .service_description {
+  max-width: 600px;
 }
