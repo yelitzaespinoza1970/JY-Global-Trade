@@ -1,5 +1,5 @@
 # JY Global Trade LLC 🌎
-
+![JY Global Trade LLC Website](Screenshot_22-10-2026_185141_jyglobaltradeusa.com.jpeg)
 ### International Trade | Import & Export | Brokerage | Logistics
 
 **JY Global Trade LLC** is a bilingual business website developed to present international trade services and connect businesses with commercial opportunities.
